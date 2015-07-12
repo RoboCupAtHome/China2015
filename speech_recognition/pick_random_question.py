@@ -2,8 +2,20 @@
 
 import csv
 import random
+from termcolor import colored
+from collections import OrderedDict
 
-answering = {}
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+
+answering = OrderedDict()
 
 with open("speech_recognition_questions.csv") as f:
     reader = csv.DictReader(f, delimiter=";")
@@ -16,8 +28,9 @@ with open("speech_recognition_questions.csv") as f:
         q = questions.pop()
         dict_key = "{0}: {1}".format(question_index, q["Question"])
 
-        print "Question {0}: {1}.   ----> {2}".format(question_index, q["Question"], q["ANSWER"])
-        key = raw_input("Correct answer? c = correct, i = incorrect: ").strip()
+        print "Stand in FRONT of the robot "
+        print bcolors.OKGREEN + "Question {0}: {1}.   ----> {2}".format(question_index, q["Question"], q["ANSWER"]) + bcolors.ENDC
+        key = raw_input("Correct answer? " + colored("c = correct", 'green') + ", " + colored("i = incorrect: ", 'red')).strip()
 
         if key == "c":
             answering[dict_key] = 10
@@ -39,15 +52,19 @@ with open("speech_recognition_questions.csv") as f:
 
         dict_key = "{0}: {1}".format(question_index, q["Question"])
 
-        print "Question {0}: {1}.   ----> {2}".format(question_index, q["Question"], q["ANSWER"])
-        key = raw_input("Correct answer? c = correct, i = incorrect, r = repeat: ")
+        print "Step BEHIND the robot."
+
+        print bcolors.OKGREEN + "Question {0}: {1}.   ----> {2}".format(question_index, q["Question"], q["ANSWER"]) + bcolors.ENDC
+        # key = raw_input("Correct answer? c = correct, i = incorrect, r = repeat: ")
+        key = raw_input("Correct answer? " + colored("c = correct", 'green') + ", " + colored("i = incorrect: ", 'red') + ", " + colored("r = repeat: ", 'blue')).strip()
         if key == "c":
             answering[dict_key] = 20
         elif key == "i":
             answering[dict_key] = 0
         elif key == "r":
-            print "Question {0}m, 2nd attempt: {1}.   ----> {2}".format(question_index, q["Question"], q["ANSWER"])
-            key = raw_input("Correct answer in 2nd attempt? c = correct, i = incorrect: ")
+            print bcolors.OKGREEN +"Question {0}, 2nd attempt: {1}.   ----> {2}".format(question_index, q["Question"], q["ANSWER"]) + bcolors.ENDC
+            # key = raw_input("Correct answer in 2nd attempt? c = correct, i = incorrect: ")
+            key = raw_input("Correct answer in 2nd attempt? " + colored("c = correct", 'green') + ", " + colored("i = incorrect: ", 'red')).strip()
             if key == "c":
                 answering[dict_key] = 10
             if key == "i":
