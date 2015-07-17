@@ -1,0 +1,26 @@
+Setup,,Stage 1,,,,
+Mapping slots,Robot Inspection,Navigation,Person Recognition,Manipulation + Object recognition,Speech Recognition,GPSR
+Cesar Voxar,aiRobots_NCKU,Cesar Voxar,aiRobots_NCKU,Tinker,Tobi,Homer
+Tinker,Cesar Voxar,Tinker,Tobi,aiRobots_NCKU,Homer,Cesar Voxar
+Tobi,Homer,Cesar Voxar,aiRobots_NCKU,Tinker,Tobi,Homer
+Homer,Tobi,Tinker,Tobi,aiRobots_NCKU,Homer,Cesar Voxar
+Erasers,Skuba,Cesar Voxar,aiRobots_NCKU,Tinker,Tobi,Homer
+TechUnited,Tinker,Tinker,Tobi,aiRobots_NCKU,Homer,Cesar Voxar
+aiRobots_NCKU,Erasers,Tobi,Cesar Voxar,Tobi,Skuba,TechUnited
+Skuba,TechUnited,Homer,Skuba,Skuba,Erasers,Tobi
+,,Tobi,Cesar Voxar,Tobi,Skuba,TechUnited
+,,Homer,Skuba,Skuba,Erasers,Tobi
+,,Tobi,Cesar Voxar,Tobi,Skuba,TechUnited
+,,Homer,Skuba,Skuba,Erasers,Tobi
+,,Erasers,Tinker,Homer,Cesar Voxar,Tinker
+,,TechUnited,TechUnited,Erasers,aiRobots_NCKU,Skuba
+,,Erasers,Tinker,Homer,Cesar Voxar,Tinker
+,,TechUnited,TechUnited,Erasers,aiRobots_NCKU,Skuba
+,,Erasers,Tinker,Homer,Cesar Voxar,Tinker
+,,TechUnited,TechUnited,Erasers,aiRobots_NCKU,Skuba
+,,aiRobots_NCKU,Homer,Cesar Voxar,TechUnited,Erasers
+,,Skuba,Erasers,TechUnited,Tinker,aiRobots_NCKU
+,,aiRobots_NCKU,Homer,Cesar Voxar,TechUnited,Erasers
+,,Skuba,Erasers,TechUnited,Tinker,aiRobots_NCKU
+,,aiRobots_NCKU,Homer,Cesar Voxar,TechUnited,Erasers
+,,Skuba,Erasers,TechUnited,Tinker,aiRobots_NCKU
