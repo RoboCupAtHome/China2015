@@ -1,28 +1,28 @@
-,,18-7-2015,19-7-2015,20-7-2014,21-7-2013,22-7-2013,,,max. time [m],teams,repeat,Arenas,Total [m],Slots [½h],,,
-From,To,Saturday,Sunday,Monday,Tuesday,Wednesday,,RIPS,5,20,1,2,50,2,,1,AIBOT 
-08:00,08:30,,,,,,,GPSR,8,20,3,2,240,8,,2,Aperture Robotics
-08:30,09:00,,,,,,,Manip+obj,3,20,3,2,90,3,,3,ARC-AUT
-09:00,09:30,,Speech Recog,Navigation,Open,,,Navigation,5,20,3,2,150,5,,4,BahiaRT@Home
-09:30,10:00,,Speech Recog,Navigation,Open,,,Person recog,5,20,3,2,150,5,,5,BITAtHome
-10:00,10:30,,Speech Recog,Navigation,,,,RoboZoo,60,1,1,1,60,2,,6,C.E.S.A.R-VOXAR Labs
-10:30,11:00,,Speech Recog,Navigation,,,,Speech recog,5,20,3,2,150,5,,7,demura.net
-11:00,11:30,,Speech Recog,Navigation,RoboNurse,Final,,Open,7,10,1,2,35,2,,8,eR@sers
-11:30,12:00,,,,RoboNurse,Final,,Restaurant,10,10,1,1,100,4,,9,Golem
-12:00,12:30,,,RoboZoo,,,,RoboNurse,10,10,1,2,50,2,,10,homer@UniKoblenz
-12:30,13:00,,Person recog,RoboZoo,,,,Wake-me-up,10,10,1,2,50,2,,11,JiaoLong
-13:00,13:30,,Person recog,,Wake-me-up,,,Final,10,5,1,1,50,2,,12,KameRider
-13:30,14:00,,Person recog,,Wake-me-up,,,,,,,,,,,13,MT2015
-14:00,14:30,,Person recog,GPSR,,,,,133,,,,1175,42,,14,NimbRo@Home
-14:30,15:00,,Person recog,GPSR,,,,,,,,,,,,15,Pumas
-15:00,15:30,,,GPSR,Restaurant,,,,,,,,,,,16,Sun@Home
-15:30,16:00,,,GPSR,Restaurant,,,,,,,,,,,17,Tech United Eindhoven
-16:00,16:30,Robot Inspec.,Manip+obj,GPSR,Restaurant,,,,,,,,,,,18,ToBI (Team of Bielefeld)
-16:30,17:00,Robot Inspec.,Manip+obj,GPSR,Restaurant,,,,,,,,,,,19,Uchile HomeBreakers
-17:00,17:30,,Manip+obj,GPSR,,,,,,,,,,,,20,WrightEagle@Home
-17:30,18:00,,,GPSR,,,,,,,,,,,,,
-18:00,18:30,,,,,,,,,,,,,,,,
-18:30,19:00,,,,,,,,,,,,,,,,
-19:00,19:30,Poster session,,,,,,,,,,,,,,,
-19:30,20:00,Poster session,,,,,,,,,,,,,,,
-20:00,20:30,Reception,Team leaders,Team leaders,Team leaders,,,,,,,,,,,,
-20:30,21:00,Reception,Team leaders,Team leaders,Team leaders,,,,,,,,,,,,
+,,17-7-2016,18-7-2015,19-7-2015,20-7-2014,21-7-2013,22-7-2013,,,,,,,max. time [m],teams,repeat,Arenas,Total [m],Slots [½h]
+From,To,Friday,Saturday,Sunday,Monday,Tuesday,Wednesday,,,Team,Arena,,RIPS,5,17,1,2,42.5,2
+08:00,08:30,,,,,,,,1,Cesar Voxar,B,,GPSR,8,17,3,2,204,7
+08:30,09:00,,,,,,,,2,BahiaRT@Home,A ,,Manip+obj,3,17,3,2,76.5,3
+09:00,09:30,,,,Speech Recog,Wake-me-up,,,3,Uchile HomeBreakers,A ,,Navigation,5,17,3,2,127.5,5
+09:30,10:00,,,RoboZoo,Speech Recog,Wake-me-up,,,4,JiaoLong,A ,,Person recog,5,17,3,2,127.5,5
+10:00,10:30,,,RoboZoo,Speech Recog,Wake-me-up,,,5,Sun@Home,A ,,RoboZoo,60,1,1,1,60,2
+10:30,11:00,,,,Speech Recog,Wake-me-up,,,6,Wright Eagle,A ,,Speech recog,5,17,3,2,127.5,5
+11:00,11:30,,,,Speech Recog,,Final,,7,Bit@Home,A ,,Open,10,10,1,1,100,4
+11:30,12:00,,,Navigation,,,Final,,8,Tinker,B,,Restaurant,10,10,1,1,100,4
+12:00,12:30,,,Navigation,,RoboNurse,,,9,Tobi,B,,RoboNurse,10,10,1,1,100,4
+12:30,13:00,,,Navigation,GPSR,RoboNurse,,,10,Homer,B,,Wake-me-up,10,10,1,1,100,4
+13:00,13:30,,,Navigation,GPSR,RoboNurse,,,11,Demura.net,A ,,Final,10,5,1,1,50,2
+13:30,14:00,,,Navigation,GPSR,RoboNurse,,,12,KameRider,A ,,,,,,,,
+14:00,14:30,,Team leaders,,GPSR,,,,13,Erasers,B,,,136,,,,1215.5,47
+14:30,15:00,,Team leaders,Person recog,GPSR,,,,14,Pumas,A ,,,,,,,,
+15:00,15:30,,,Person recog,GPSR,,,,15,TechUnited,B,,,,,,,,
+15:30,16:00,,,Person recog,GPSR,Restaurant,,,16,aiRobots_NCKU,B,,,,,,,,
+16:00,16:30,,Robot Inspec. + poster teaser,Person recog,GPSR,Restaurant,,,17,Skuba,B,,,,,,,,
+16:30,17:00,,Robot Inspec. + poster teaser,Person recog,,Restaurant,,,,,,,,,,,,,
+17:00,17:30,,,,,Restaurant,,,,,,,,,,,,,
+17:30,18:00,Mapping slots,,Manip+obj,Open,,,,,,,,,,,,,,
+18:00,18:30,Mapping slots,,Manip+obj,Open,,,,17,,,,,,,,,,
+18:30,19:00,Mapping slots,,Manip+obj,Open,,,,,,,,,,,,,,
+19:00,19:30,Mapping slots,Poster session,,Open,,,,,,,,,,,,,,
+19:30,20:00,Mapping slots,Poster session,,,,,,,,,,,,,,,,
+20:00,20:30,,Reception,Team leaders,Team leaders,Team leaders,,,,,,,,,,,,,
+20:30,21:00,,Reception,Team leaders,Team leaders,Team leaders,,,,,,,,,,,,,
