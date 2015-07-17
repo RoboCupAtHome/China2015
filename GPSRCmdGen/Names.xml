@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<names>
+  <name>Alex</name>
+  <name>Angel</name>
+  <name>Eve</name>
+  <name>Jamie</name>
+  <name>Jane</name>
+  <name>Liza</name>
+  <name>Melissa</name>
+  <name>Tracy</name>
+  <name>Robin</name>
+  <name>Sophia</name>
+  <name gender="Male">Alex</name>
+  <name gender="Male">Angel</name>
+  <name gender="Male">Edward</name>
+  <name gender="Male">Homer</name>
+  <name gender="Male">Jamie</name>
+  <name gender="Male">John</name>
+  <name gender="Male">Kevin</name>
+  <name gender="Male">Kurt</name>
+  <name gender="Male">Tracy</name>
+  <name gender="Male">Robin</name>
+</names>

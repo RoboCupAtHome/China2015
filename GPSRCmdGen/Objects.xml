@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<categories>
+  <category name="drinks" defaultLocation="kitchen table" room="kitchen">
+    <object name="Green Tea" difficulty="easy" />
+    <object name="Papaya Milk" difficulty="easy" />
+    <object name="Pure Milk" difficulty="easy" />
+    <object name="Water" difficulty="easy" />
+    <object name="Orange Juice" difficulty="easy" />
+    <object name="Beer" difficulty="easy" />
+    <object name="beer" difficulty="easy" />
+  </category>
+  <category name="food" defaultLocation="kitchen counter" room="kitchen">
+    <object name="Coconut Cereals" difficulty="easy" />
+    <object name="Coco Balls" difficulty="easy" />
+    <object name="Egg Stars" difficulty="easy" />
+    <object name="Gram Soup" difficulty="easy" />
+    <object name="Bean Sauce" difficulty="easy" />
+    <object name="Apple" type="alike" difficulty="moderate" />
+    <object name="Lemon" type="alike" difficulty="moderate" />
+    <object name="Pear" type="alike" difficulty="moderate" />
+  </category>
+  <category name="snacks" defaultLocation="desk" room="bedroom">
+    <object name="Biscuits" difficulty="easy" />
+    <object name="Bubble Gum" difficulty="easy" />
+    <object name="Chocolates" difficulty="easy" />
+    <object name="Tomato Chips" difficulty="easy" />
+    <object name="Barbecue Chips" difficulty="easy" />
+    <object name="Honey Chips" difficulty="easy" />
+  </category>
+  <category name="cleaning stuff" defaultLocation="bookcase" room="hallway">
+    <object name="Toilet Paper" type="alike" difficulty="high" />
+    <object name="Sponge" difficulty="moderate" />
+    <object name="Soap" difficulty="easy" />
+    <object name="Lotion" difficulty="easy" />
+    <object name="Toothpaste" difficulty="moderate" />
+    <object name="Cloth" type="alike" difficulty="high" />
+  </category>
+</categories>

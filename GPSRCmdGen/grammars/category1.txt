@@ -1,0 +1,158 @@
+##############################################################################
+#
+# Category1 Grammar
+# 
+# Author:  Mauricio Matamoros
+# Date:    March 2015
+#
+# IMPORTANT: 
+# Since this document declares a grammar for generating sentences,
+# NO RECURSIVE rules must be used.
+# 
+##############################################################################
+
+/*****************************************************************************
+*
+* FORMAT
+*
+******************************************************************************
+*
+* ROOT
+* The root rule S of the grammar is the $Main Non-Terminal. In order for the
+* grammar to be valid, it must contain at least one $Main rule.
+*
+* Non-Terminal identifiers
+* A valid Non-Terminal identifier is a sequence of one or more letters,
+* digits, or underscore characters (_). Spaces, punctuation marks, and symbols
+* cannot be part of a Non-Terminal identifier.
+*
+* Wildcards
+* Wilcards are strings within braces which are used during random sentence
+* generation, replacing them by random values. The same random value may be
+* specified for a set of wildcards by specifying an ID. Also, the type may
+* be optionally specified. Syntax is as follows:
+*
+*	{wildcard [type] [id] [meta:[metadata]]}
+*
+* When the "meta:" literal string is found within a wildcard, all text
+* following it is addressed as metadata. While etadata is not part of the 
+* generated sentence, it can be used to display additional information.
+*
+* The following wildcards are defined:
+*	{category}	An object category.
+*				Types are ignored.
+*	{gesture}	A gesture name.
+*				Types are ignored.
+*	{location}	Any location.
+*				Types may be [room|placement|beacon]
+*	{name}		A person name.
+*				Types may be [male|female]
+*	{object}	An object name.
+*				Types may be [known|alike]
+*	{question}	The "question" literal string.
+*				Types are ignored. Metadata contains a question/answer
+*				from the predefined questions set.
+*	{void}		Void construct used to inject metadata.
+*
+*				Types are ignored.
+* Also, the following alias are defined
+*	{beacon}	Alias for {location beacon}
+*	{aobject}	Alias for {object alike}
+*	{female}	Alias for {name female}
+*	{kobject}	Alias for {object known}
+*	{male}		Alias for {name male}
+* 	{placement}	Alias for {location placement}
+*	{room}		Alias for {location room}
+*
+* Obfuscating information 
+* A wildcard ended with a question mark will be replaced by an obfuscated
+* value instead of the random value choosen by that wildcard, which will
+* be included as metadata.
+* The obfuscation is performed as follows (wildcards not shown can not
+* be obfuscated):
+*	{category}	The "objects" literal string
+*	{location}	The "room" literal string for rooms, for placements and
+*				beacons, the room to which the location belongs.
+*	{object}	The category to which the object belongs.
+*
+* Comments
+* C/C++/Java comments are permitted.
+* In addition, any words, spaces, or marks after # or % or ; will be ignored
+*
+* Defining grammar name and tier
+* The grammar name and tier may be set as a comment with the lines:
+* ; grammar name Count
+* ; grammar tier Easy
+* Accepted values for the tier are Easy, Moderate, and High
+*
+*
+*****************************************************************************/
+
+
+
+; grammar name Category I
+; grammar tier Easy
+
+$Main		= $complex 
+; $complex	= $findprs and ($talk | $follow)
+; $follow	= $vbfollow her to the {room}
+; $findprs	= $vbfind a person
+
+##############################################################################
+#
+# Complex Command: Get an object and deliver it
+# 
+##############################################################################
+$complex	= $getobj and $deliver
+
+$getobj		= $vbtake the {kobject} from the {placement 1}
+
+$deliver	= $vbdeliver it to $target
+$target		= me
+$target		= {name} (at | in | which is in) the {room}
+$target		= the {placement 2}
+
+
+##############################################################################
+#
+# Complex Command: Go to room and search for an object
+# 
+##############################################################################
+$complex	= $goroom and $findobj
+
+$goroom		= $vbgoto the {room}
+$findobj	= $vbfind the {kobject}
+
+
+##############################################################################
+#
+# Complex Command: Find a person and talk with
+# 
+##############################################################################
+$complex	= $findprsat and $talk
+
+$findprsat	= $vbfind a person in the {room}
+
+$talk		= $tell | answer a {question}
+$tell		= $vbspeak ($time | $date | $name)
+$name		= your name
+$name		= the name of your team
+$time		= the time
+$time		= what time is it
+$date		= tell the date
+$date		= what day is $day
+$date		= tell the day of the (month | week)
+$day		= today | tomorrow
+
+
+##############################################################################
+#
+# Verbs
+# 
+##############################################################################
+$vbdeliver	= bring | carry | deliver | take
+$vbfind		= find | look for
+$vbfollow	= follow
+$vbgoto		= go to | navigate to | reach | get into
+$vbtake		= take | grasp | get
+$vbspeak	= tell | say | speak
