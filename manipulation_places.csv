@@ -1,25 +1,27 @@
 Loc #,Room/area,Object in room,Manip,Category,Storage for
 ,kitchen,,,,
 ,,fridge,no,appliance,
-1,,kitchentable,,table,
+1,,kitchentable,,table,drinks
 2,,kitchencounter,,table,food
 3,,cupboard,,shelf,
+21,,trashbin,no,utility,
 ,livingroom,,,,
-4,,bar,,shelf,drinks
+4,,bar,,shelf,
 5,,couchtable,,table,
 6,,dinnertable,,table,
 7,,dinnertable,,table,
 8,,sofa,,seat,
 9,,sofa,,seat,
+,bedroom,,,,
 10,,left bedside table,,table,
 11,,right bedside table,,table,
 12,,desk,,table,snacks
 13,,bed,,seat,
 14,,bed,,seat,
+,hallway,,,,
 15,,bookcase,,shelf,cleaning stuff
 16,,bookcase,,shelf,cleaning stuff
 17,,bookcase,,shelf,cleaning stuff
 18,,bookcase,,shelf,cleaning stuff
 19,,hallwaytable,,table,
 20,,hallwaytable,,table,
-21,,trashbin,no,utility,
