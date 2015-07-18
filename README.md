@@ -48,3 +48,7 @@ Navigation
 Person Recognition
 ------------------
 - Robot starts  in the living room, facing towards the desk in the bedroom.
+
+Speech Recognition
+------------------
+- Middle of the livingroom.
