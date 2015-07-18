@@ -11,6 +11,7 @@ Robot Inspection
 Poster teaser session
 ---------------------
 - A team member explains poster in parallel to Robot Inspection.
+
 Poster session
 --------------
 - everyone has a drink and takes a look at your poster. There must be a team member at the poster to answer questions. 
