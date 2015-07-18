@@ -28,6 +28,9 @@ RoboNurse
 Manipulation & Object Recognition
 ---------------------------------
 - Only use the left half of the bookcase.
+- The team can pick the shelf to place objects on. Objects should be placed next to each other in case of multiple placements
+- After the test, please gie the referee the USB-stick as soon as possible. The referee will make sure it is the original file as created by the robot. 
+- The score for the object recognition will be normalized. If you correctly recognize all 10 objects, you would obtain 100 points, but this will be normalized over all team so that the maximal achieved score is 50. 
 
 Navigation
 ----------
@@ -41,3 +44,7 @@ Navigation
 -- E.g. In the first attempt, it may encounter the small object between WP1 & 2, and at WP2 the movable obstacle.
 -- E.g. In the second attempt, it may encounter the 3D object between WP1 & 2, and at WP2 some people
 -- etc.
+
+Person Recognition
+------------------
+- Robot starts  in the living room, facing towards the desk in the bedroom.
