@@ -10,11 +10,16 @@ Robot Inspection
 
 Poster teaser session
 ---------------------
-- A team member explains poster in parallel to Robot Inspection.
+- Directly **after** all robot inspections.
+- 3 minutes of presentation to teams in your assigned arena
+- Team leaders of teams in arena A judge posters of other teams in arena A
+- Team leaders of teams in arena B judge posters of other teams in arena B
+- Presentation is at the posters. 
+- Questions must be reserved for the actual poster session later.
 
 Poster session
 --------------
-- everyone has a drink and takes a look at your poster. There must be a team member at the poster to answer questions. 
+- Everyone has a drink and takes a look at your poster. There must be a team member at the poster to answer questions. 
 
 RoboNurse
 ---------
