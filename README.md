@@ -23,3 +23,16 @@ RoboNurse
 Manipulation & Object Recognition
 ---------------------------------
 - Only use the left half of the bookcase.
+
+Navigation
+----------
+- The robot must enter through door A.
+- Waypoint 1 is located in the livingroom, more specifically the area between door D and door F.
+- Waypoint 2 is at placement location 7, which is on the dinnertable. 
+- Waypoint 3 is in door C, looking into the kitchen. 
+- Waypoint 4 is decided by the TC and instructed to the Professional Walker. 
+- The robot must exit through door B. 
+- For every obstacle, each attempt will pick a random obstacle. The robot will encounter every possible obstacle, divided over the 3 attempts. 
+-- E.g. In the first attempt, it may encounter the small object between WP1 & 2, and at WP2 the movable obstacle.
+-- E.g. In the second attempt, it may encounter the 3D object between WP1 & 2, and at WP2 some people
+-- etc.
