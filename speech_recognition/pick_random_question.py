@@ -34,7 +34,7 @@ with open("speech_recognition_questions.csv") as f:
 
         if key == "c":
             answering[dict_key] = 10
-        if key == "i":
+        elif key == "i":
             answering[dict_key] = 0
         else:
             print "Key not allowed"
@@ -67,7 +67,7 @@ with open("speech_recognition_questions.csv") as f:
             key = raw_input("Correct answer in 2nd attempt? " + colored("c = correct", 'green') + ", " + colored("i = incorrect: ", 'red')).strip()
             if key == "c":
                 answering[dict_key] = 10
-            if key == "i":
+            elif key == "i":
                 answering[dict_key] = 0
             else:
                 print "Key not allowed"
