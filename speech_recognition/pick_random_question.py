@@ -78,5 +78,8 @@ with open("speech_recognition_questions.csv") as f:
         print "-" * 20
         print
 
+    for question, score in answering.iteritems():
+        print question, score
+
     total_score = sum(answering.values())
     print "TOTAL SCORE: {0}".format(total_score)
