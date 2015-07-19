@@ -1,5 +1,6 @@
 #! /usr/bin/env python
 
+import os, sys
 import csv
 import random
 from termcolor import colored
@@ -36,6 +37,8 @@ with open("speech_recognition_questions.csv") as f:
             answering[dict_key] = 10
         elif key == "i":
             answering[dict_key] = 0
+        elif key == "Q":
+            break
         else:
             print "Key not allowed"
 
@@ -69,8 +72,12 @@ with open("speech_recognition_questions.csv") as f:
                 answering[dict_key] = 10
             elif key == "i":
                 answering[dict_key] = 0
+            elif key == "Q":
+                break
             else:
                 print "Key not allowed"
+        elif key == "Q":
+            break
         else:
             print "Key not allowed"
 
@@ -80,6 +87,14 @@ with open("speech_recognition_questions.csv") as f:
 
     for question, score in answering.iteritems():
         print question, score
+
+    try:
+        with open(sys.argv[1]+".csv", "w+") as dump:
+            dump.write("Question and answer,Score".format(question, score) + os.linesep)
+            for question, score in answering.iteritems():
+                dump.write("{},{}".format(question, score) + os.linesep)
+    except Exception, e:
+        print e
 
     total_score = sum(answering.values())
     print "TOTAL SCORE: {0}".format(total_score)
